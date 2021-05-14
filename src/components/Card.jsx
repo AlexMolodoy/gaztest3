@@ -41,8 +41,8 @@ const PrivatCard =  observer(({ data }) => {
   }
 
   return (
-    <div className="site-card-border-less-wrapper">
-      <Card >
+    <>
+      <Card className="site-card-border-less-wrapper">
         <Button type="primary" onClick={openModal}>+ New account</Button>
         <Modal title="Новая Задача" visible={state} onOk={addTask} onCancel={closeModal} closable={false} >
           <NewTask />
@@ -62,7 +62,7 @@ const PrivatCard =  observer(({ data }) => {
           )}
         </ul>
       </Card>
-    </div>
+    </>
   );
 })
 

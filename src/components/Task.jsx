@@ -17,13 +17,15 @@ const Task = observer(({ content, start, finish, id }) => {
   }
 
   return (
-    <div className="taskContainer">
+    <div className="task-container">
       <div className="naming">
         <span className="naming-header">{content}</span>
         <span>{start} до {finish}</span>
       </div>
-      <Button type="link" onClick={updateTask}>Редактировать</Button>
-      <Button type="link" onClick={delTaskHandler}>Удалить</Button>
+      <div className="management-container">
+        <Button type="link" onClick={updateTask}>Редактировать</Button>
+        <Button type="link" onClick={delTaskHandler}>Удалить</Button>
+      </div>
     </div>
   );
 })

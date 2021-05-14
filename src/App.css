@@ -13,15 +13,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-.site-card-border-less-wrapper {
-  padding: 30px;
-  background: Gainsboro;
-}
-
 .new-task-container {
   display: flex;
   flex-direction: column;
@@ -31,4 +22,23 @@
 .remind-container {
   display: flex;
   justify-content: space-between;
+}
+
+.task-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.naming {
+  display: flex;
+flex-direction: column;
+  padding: 4px 15px;
+}
+
+.naming-header {
+  font-weight: bold;
+}
+
+.management-container {
+  display: flex;
 }
